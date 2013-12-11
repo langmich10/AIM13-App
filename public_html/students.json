@@ -1,0 +1,70 @@
+{
+    "students": [
+        {
+            "firstName": "Ulrich",
+            "lastName": "Di Bora",
+            "img": "aim13/di_bora.jpg",
+            "mail": "ulrich.dibora2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Christoffer",
+            "lastName": "F&auml;rber",
+            "img": "aim13/faerber.jpg",
+            "mail": "christoffer.faerber2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Paul",
+            "lastName": "F&uuml;reder",
+            "img": "aim13/fuereder.jpg",
+            "mail": "paul.fuereder2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Walter",
+            "lastName": "Gruber",
+            "img": "aim13/gruber.jpg",
+            "mail": "walter.gruber2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Markus",
+            "lastName": "Kainz",
+            "img": "aim13/kainz.jpg",
+            "mail": "markus.kainz2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Martin",
+            "lastName": "Klausner",
+            "img": "aim13/klausner.jpg",
+            "mail": "martin.klausner@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Michael",
+            "lastName": "Lang",
+            "img": "aim13/lang.jpg",
+            "mail": "michael.lang2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Christian",
+            "lastName": "Langmann",
+            "img": "aim13/langmann.jpg",
+            "mail": "christian.langmann@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Bernd",
+            "lastName": "L&uuml;ckl",
+            "img": "aim13/lueckl.jpg",
+            "mail": "bernd.lueckl2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Andreas",
+            "lastName": "Rait",
+            "img": "aim13/rait.jpg",
+            "mail": "andreas.rait2@edu.fh-joanneum.at"
+        },
+        { 
+            "firstName": "Thomas",
+            "lastName": "Visotschnig",
+            "img": "aim13/visotschnig.jpg",
+            "mail": "thomas.visotschnig2@edu.fh-joanneum.at"
+        }
+    ]
+}
