@@ -22,9 +22,9 @@ and open the template in the editor.
                 <ul id="studentList" data-role="listview" data-inset="true">
                 </ul>
                 <script>
-                    $.getJSON("students.json", function (data) {
-                        $.each(data.students, function (key, value) {
-                            var listEntry = '<li><a href="#">';
+                    $.getJSON("students.json", function(data) {
+                        $.each(data.students, function(key, value) {
+                            var listEntry = '<li><a href="#studentDetail" data-parm="' + key + '">';
                             listEntry += '<img src="' + value.img + '">';
                             listEntry += '<h2>' + value.lastName + '</h2>';
                             listEntry += '<p>' + value.firstName + '</p>';
@@ -33,11 +33,33 @@ and open the template in the editor.
                         });
                         $('#studentList').listview('refresh');
                         $('#studentCount').text("Number of Students: " + data.students.length);
+                        
+                        $("a").on("click", function (event) {
+                           var parm = $(this).attr("data-parm");
+                           $('#studentImage').attr('src', data.students[parm].img);
+                           $('#studentFirstname').html(data.students[parm].firstName);
+                           $('#studentLastname').html(data.students[parm].lastName);
+                           $('#studentEmail').html(data.students[parm].mail);
+                           $('#studentEmail').attr('href', 'mailto:' + data.students[parm].mail);
+                        });
                     });
                 </script>
             </div>
             <div data-role="footer" data-position="fixed">
                 <h1 id="studentCount"></h1>
+            </div>
+        </div>
+
+
+        <div data-role="page" id="studentDetail" data-add-back-btn="true">
+            <div data-role="header">
+                AIM13 App
+            </div>
+            <div data-role="content">
+                <img id="studentImage" alt="Image">
+                <p id="studentFirstname"></p>
+                <p id="studentLastname"></p>
+                <a id="studentEmail"></a>
             </div>
         </div>
     </body>
